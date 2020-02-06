@@ -9,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  constructor() { }
+  addNewServer = false ;
+
+  constructor() {
+    setTimeout(()=>{
+      this.addNewServer=true;
+    },2000);
+   }
 
   ngOnInit() {
   }
